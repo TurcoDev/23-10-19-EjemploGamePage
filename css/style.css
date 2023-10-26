@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Pixelify+Sans:wght@400;600&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   width: 100%;
   height: fit-content;
@@ -43,11 +49,62 @@ header .btn_menu:hover {
 main{
   display: flex;
   justify-content: center;
+  /* animation-name: movimiento2;
+  animation-duration: 4s; */
 }
+
+button{
+  width: fit-content;
+  height: 50px;
+} 
 
 main .game_main{
   width: 100px;
   height: 100px;
-  background-image: url('https://www.friv.com/z/thumbs/fireboyandwatergirlforest360x100Min.png');
   margin: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+main .game_main > img{
+  height: 100%;
+  width: 100%;
+}
+
+#juego1{
+  display: block;
+  animation-name: animacion_juego1;
+  animation-duration: 2s;
+}
+
+@keyframes animacion_juego1 {
+  from {
+    transform: translateX(-300px) rotate(0);
+  }
+  to {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes movimiento {
+  from {
+    transform: translateY(-400px) rotate(180deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes movimiento2 {
+  0% {
+    transform: translateY(-300px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-150px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
