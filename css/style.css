@@ -53,15 +53,40 @@ main{
   animation-duration: 4s; */
 }
 
-button{
+.tarjeta_juego{
+  width: 25%;
+  border: 3px solid rgb(84, 64, 231);
+  margin: 20px;
+  padding: 10px;
+}
+
+.tarjeta_juego h5{
+  text-align: center;
+  font-size: 1.2em; /* 1em = 16px */
+}
+
+.tarjeta_juego .descripcion_juego{
+  height: 50px;
+  /* height: fit-content; */
+  /* overflow-y: scroll; */
+  overflow: hidden;
+  margin: 5px 5px 10px 5px;
+}
+
+.tarjeta_juego .descripcion_juego p.texto_juego{
+  font-size: 0.85em;
+  text-align: justify;
+}
+
+/* button{
   width: fit-content;
   height: 50px;
-} 
+}  */
 
 main .game_main{
   width: 100px;
   height: 100px;
-  margin: 10px;
+  margin: 10px auto;
   border: 2px solid;
   border-radius: 10px;
   overflow: hidden;
