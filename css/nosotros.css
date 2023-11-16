@@ -1,0 +1,28 @@
+
+
+input:focus{
+  box-shadow: 3px 3px 3px rgb(255, 157, 157);
+}
+
+body{
+  padding: 15px;
+}
+
+.formulario-container{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center; /* alineacion horizontal en direction row */
+  align-items: center; /* alineacion vetical en direction row */
+}
+
+.formulario-container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+}
+
+.formulario-container > form > textarea {
+  resize: none;
+}

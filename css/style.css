@@ -58,6 +58,7 @@ main{
   border: 3px solid rgb(84, 64, 231);
   margin: 20px;
   padding: 10px;
+  height: fit-content;
 }
 
 .tarjeta_juego h5{
@@ -71,6 +72,7 @@ main{
   /* overflow-y: scroll; */
   overflow: hidden;
   margin: 5px 5px 10px 5px;
+  cursor: pointer;
 }
 
 .tarjeta_juego .descripcion_juego p.texto_juego{
